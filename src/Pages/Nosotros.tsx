@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom'; // Importa el hook useNavigate
 import catImage from '../assets/cat.webp';
 import dogImage from '../assets/dog.webp';
-import facebookLogo from '../assets/facebook.png'; // Asegúrate de que la ruta sea correcta
-import instagramLogo from '../assets/instagram.png'; // Asegúrate de que la ruta sea correcta
-import twitterLogo from '../assets/twitter.png'; // Asegúrate de que la ruta sea correcta
+import facebookLogo from '../assets/facebook.png';
+import instagramLogo from '../assets/instagram.png';
+import twitterLogo from '../assets/twitter.png';
 import './Nosotros.css';
 
 

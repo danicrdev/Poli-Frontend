@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import cat from './assets/cat.webp';
 import dog from './assets/dog.webp';
 import { Navbar } from './components/navbar';
-import Nosotros from './Pages/Nosotros'; // Asegúrate de que la ruta sea correcta
+import Nosotros from './Pages/Nosotros';
 
 function App() {
   return (
