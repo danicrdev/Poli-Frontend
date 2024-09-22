@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'; // Importa el hook useNavigate
 import catImage from '../assets/cat.webp';
 import dogImage from '../assets/dog.webp';
 import facebookLogo from '../assets/facebook.png'; // Asegúrate de que la ruta sea correcta
@@ -5,7 +6,10 @@ import instagramLogo from '../assets/instagram.png'; // Asegúrate de que la rut
 import twitterLogo from '../assets/twitter.png'; // Asegúrate de que la ruta sea correcta
 import './Nosotros.css';
 
+
 const Nosotros = () => {
+  const navigate = useNavigate(); // Inicializa el hook de navegación
+
   return (
     <div className="outer-container">
     <div className="nosotros-container">
@@ -39,13 +43,21 @@ const Nosotros = () => {
           También ofrecemos la opción de donar para la alimentación y manutención de nuestros animales mientras esperan ser adoptados. Estas contribuciones son vitales para garantizar que cada mascota reciba la atención y el cuidado necesarios durante su estancia con nosotros.
         </p>
       </section>
+
       <img src={catImage} alt="Nuestra misión" className="mission-image" />
+
       <section className="social-media">
         <h2 className="subtitle">¡Síguenos en nuestras redes sociales!</h2>
         <div className="social-icons">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
           <img src={facebookLogo} alt="Facebook" className="social-icon" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
           <img src={instagramLogo} alt="Instagram" className="social-icon" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
           <img src={twitterLogo} alt="Twitter" className="social-icon" />
+        </a>
         </div>
       </section>
 
@@ -55,10 +67,14 @@ const Nosotros = () => {
         </p>
         
 
-        <div className="buttons">
-          <button className="button">¿Aún no estás registrado?</button>
-          <button className="button adopt-button">¡Adopta ya!</button>
-        </div>
+      <div className="buttons">
+        <button className="button" onClick={() => navigate('/login')}> {/* Redirige a /login */}
+         ¿Aún no estás registrado?
+        </button>
+        <button className="button adopt-button" onClick={() => navigate('/adopta')}> {/* Redirige a /adopta */}
+         ¡Adopta ya!
+        </button>
+          </div>
       </section>
     </div>
     </div>
