@@ -4,6 +4,7 @@ import cat from './assets/cat.webp';
 import dog from './assets/dog.webp';
 import { Navbar } from './components/navbar';
 import Nosotros from './Pages/Nosotros';
+import Adopta from './Pages/Adopta/Adopta';
 
 function App() {
   return (
@@ -19,13 +20,14 @@ function App() {
                 <div className="columns-2">
                   <img src={dog} alt="Dog" className="h-80" />
                   <p className="text-balance">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
                   </p>
                 </div>
                 <h1 className="h1">Adopta con nosotros</h1>
@@ -33,13 +35,14 @@ function App() {
                   <img src={cat} alt="Cat" className="h-80" />
                   <div>
                     <p className="text-balance">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                      enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                      in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                      nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.
                     </p>
                     <button
                       type="button"
@@ -53,6 +56,7 @@ function App() {
             }
           />
           <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/adopta" element={<Adopta />} />
         </Routes>
       </div>
     </Router>
