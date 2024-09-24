@@ -30,6 +30,16 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
+      'sort-imports': [
+        'error',
+        {
+          ignoreCase: false,
+          ignoreDeclarationSort: true,
+          ignoreMemberSort: false,
+          memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+          allowSeparatedGroups: true,
+        },
+      ],
     },
   },
 )
