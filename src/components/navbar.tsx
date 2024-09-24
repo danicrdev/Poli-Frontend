@@ -24,7 +24,9 @@ const MenuItem: React.FC<Props> = ({ name, to, active }) => (
 export const Navbar = () => {
   return (
     <nav className="mb-5">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4"> {/* Cambié justify-between a justify-center */}
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4">
+        {' '}
+        {/* Cambié justify-between a justify-center */}
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
             <MenuItem name="Inicio" to="/" />
@@ -34,8 +36,10 @@ export const Navbar = () => {
             <MenuItem name="Nosotros" to="/nosotros" />
           </ul>
         </div>
-            {/* Botón de login */}
-            <div className="ml-20"> {/* Añadí un margen izquierdo más pequeño */}
+        {/* Botón de login */}
+        <div className="ml-20">
+          {' '}
+          {/* Añadí un margen izquierdo más pequeño */}
           <a
             href="/login"
             className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
@@ -43,7 +47,6 @@ export const Navbar = () => {
             Iniciar sesión
           </a>
         </div>
-
       </div>
     </nav>
   );
