@@ -1,12 +1,12 @@
 import React from 'react';
 import './Servicios.css';
 
-import maxImage from '../assets/max.png';
-import lunaImage from '../assets/luna.png';
-import rockyImage from '../assets/rocky.png';
-import bellaImage from '../assets/bella.png';
-import oliverImage from '../assets/oliver.png';
-import buddyImage from '../assets/buddy.png';
+import maxImage from '../assets/Max.png';
+import lunaImage from '../assets/Luna.png';
+import rockyImage from '../assets/Rocky.png';
+import bellaImage from '../assets/Bella.png';
+import oliverImage from '../assets/Oliver.png';
+import buddyImage from '../assets/Buddy.png';
 
 import apadrinarImage from '../assets/apadrinar.png';
 import esterilizacionImage from '../assets/esterilizacion.png';
