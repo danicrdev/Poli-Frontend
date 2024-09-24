@@ -1,0 +1,101 @@
+/* Estilos generales */
+.servicios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Secciones */
+.adopcion-section,
+.otros-servicios-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c3e50;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Títulos secundarios (negrita) */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+/* Listas */
+.pet-list,
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Tarjetas */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 250px;
+  margin: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Descripciones más pequeñas */
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+/* Botones */
+button {
+  background-color: #5b63d1 !important;
+  color: white !important;
+  border: none;
+  padding: 24px 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-size: 1.4rem;
+  min-width: 110px;
+  min-height: 35px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Sección de otros servicios */
+.otros-servicios-section {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
