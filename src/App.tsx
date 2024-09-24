@@ -5,6 +5,7 @@ import dog from './assets/dog.webp';
 import { Navbar } from './components/navbar';
 import Nosotros from './Pages/Nosotros';
 import Contactenos from './Pages/Contactenos';
+import Adopta from './Pages/Adopta/Adopta';
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
           />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<Contactenos />} />
+          <Route path="/adopta" element={<Adopta />} />
         </Routes>
       </div>
     </Router>
