@@ -6,6 +6,8 @@ import { SignUp } from './Pages/Login/SignUp';
 import Nosotros from './Pages/Nosotros';
 import Servicios from './Pages/Servicios';
 
+export const BASE_URL = import.meta.env.BASE_URL;
+
 interface RouteType {
   path: string;
   component: React.FC;
