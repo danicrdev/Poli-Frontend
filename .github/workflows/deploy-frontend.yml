@@ -53,8 +53,6 @@ jobs:
 
       - name: Build
         run: pnpm build --base=${{ vars.BASE_URL }}
-        env:
-          VITE_API_URL: ${{ secrets.VITE_API_URL }}
 
       - name: Set 404 page
         run: cp ./dist/index.html ./dist/404.html
