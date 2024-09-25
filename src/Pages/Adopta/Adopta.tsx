@@ -30,7 +30,7 @@ const Adopta = () => {
           <label htmlFor="mensaje">
             Mensaje <span className="requerido">(requerido)</span>
           </label>
-          <textarea id="mensaje" name="mensaje" rows="4" required />
+          <textarea id="mensaje" name="mensaje" rows={4} required />
 
           <button type="submit">Enviar</button>
         </form>
