@@ -102,7 +102,7 @@ const Nosotros = () => {
           </p>
 
           <div className="buttons">
-            <button className="button" onClick={() => navigate('/login')}>
+            <button className="button" onClick={() => navigate('/Login')}>
               {' '}
               {/* Redirige a /login */}
               ¿Aún no estás registrado?
